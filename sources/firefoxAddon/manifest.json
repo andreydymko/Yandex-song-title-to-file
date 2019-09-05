@@ -12,8 +12,7 @@
     "description": "Allows you to get song title from Yandex.music/radio and write it to .txt file",
 
     "icons": {
-        "16": "icons/iconColor.ico",
-		"16": "icons/iconGray.ico"
+        "16": "icons/iconColor.ico"
     },
 	
 	"browser_action": {
