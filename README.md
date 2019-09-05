@@ -13,7 +13,9 @@ Run installer.exe as administrator, you should see something like that (.json fi
 Now everything is ready. 
 
 Click on the extension icon, it will enable extension (icon is colored).
+
 ![alt text](https://i.imgur.com/fVUxpKR.png)
 
 Another click will disable extension (icon is grayscale).
+
 ![alt text](https://i.imgur.com/w1Vuny8.png)
