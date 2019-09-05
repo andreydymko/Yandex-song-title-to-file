@@ -9,7 +9,7 @@ Download all files from [mega.nz](https://mega.nz/#!sq5VTQ7A!Ep0vLeBABbNOYJy3HSh
 
 Then you should put **Get_Song_Title_To_File.exe** and **installer.exe** in **the same folder**, where you want your .txt file to be.
 
-Run installer.exe as **administrator**, you should see something like that (.json file created in folder and result tells that everything is good). **Restart firefox if it was open.**
+Run **installer.exe** as **administrator**, you should see something like that (.json file created in folder and result tells that everything is good). **Restart firefox if it is open.**
 
 ![alt text](https://i.imgur.com/WQjJNOE.png)
 
