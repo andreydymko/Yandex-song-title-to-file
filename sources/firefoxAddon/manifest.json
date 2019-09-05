@@ -1,0 +1,42 @@
+{
+    "manifest_version": 2,
+    "name": "Get_Song_Title_To_File",
+    "version": "0.1",
+    "applications": {
+        "gecko": {
+            "id": "1mfSCfd200SongTitleToFile@google.com",
+			"strict_min_version": "50.0"
+        }
+    },
+
+    "description": "Allows you to get song title from Yandex.music/radio and write it to .txt file",
+
+    "icons": {
+        "16": "icons/iconColor.ico",
+		"16": "icons/iconGray.ico"
+    },
+	
+	"browser_action": {
+		"default_icon": "icons/iconColor.ico",
+		"default_title": "Yandex.music/radio song title"
+	},
+	
+	"content_scripts": [
+		{
+			"matches": ["*://music.yandex.com/*", "*://music.yandex.ru/*", "*://music.yandex.by/*", "*://music.yandex.ua/*", "*://music.yandex.kz/*", "*://music.yandex.tr/*", "*://radio.yandex.com/*", "*://radio.yandex.ru/*", "*://radio.yandex.by/*", "*://radio.yandex.ua/*", "*://radio.yandex.kz/*", "*://radio.yandex.tr/*"],
+			"js": ["getSongName.js"],
+			"run_at": "document_end"
+		}
+	],
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+          
+    "permissions": [
+		"nativeMessaging",
+        "tabs",
+		"storage",
+        "*://music.yandex.com/*", "*://music.yandex.ru/*", "*://music.yandex.by/*", "*://music.yandex.ua/*", "*://music.yandex.kz/*", "*://music.yandex.tr/*", "*://radio.yandex.com/*", "*://radio.yandex.ru/*", "*://radio.yandex.by/*", "*://radio.yandex.ua/*", "*://radio.yandex.kz/*", "*://radio.yandex.tr/*"
+    ]
+}
