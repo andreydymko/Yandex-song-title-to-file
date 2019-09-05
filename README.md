@@ -8,7 +8,8 @@ Download all files from [mega.nz](https://mega.nz/#!sq5VTQ7A!Ep0vLeBABbNOYJy3HSh
 ![alt text](https://i.imgur.com/NuW3OIF.png)
 
 Then you should put **Get_Song_Title_To_File.exe** and **installer.exe** in **the same folder**, where you want your .txt file to be.
-Run installer.exe as **administrator**, you should see something like that (.json file created in folder and result tells that everything is good).
+
+Run installer.exe as **administrator**, you should see something like that (.json file created in folder and result tells that everything is good). **Restart firefox if it was open.**
 
 ![alt text](https://i.imgur.com/WQjJNOE.png)
 
@@ -21,3 +22,10 @@ Click on the extension icon, it will enable extension (icon is colored).
 Another click will disable extension (icon is grayscale).
 
 ![alt text](https://i.imgur.com/w1Vuny8.png)
+
+# How To Use
+When extension is enabled, Yandex.Music or Yandex.Radio site is open and playing track, it will print song artists and title in the file **"currentSong.txt"**.
+
+![alt text](https://i.imgur.com/q0uiXYt.png)
+
+P.S. It writes song title when track is changed. So sometimes you need to change the track manually, or wait before it ends, for text file to update.
