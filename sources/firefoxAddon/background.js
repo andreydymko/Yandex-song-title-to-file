@@ -1,23 +1,32 @@
-var isExtEnabled;
-
-var gettingPreference = browser.storage.local.get(null);
-gettingPreference.then(function(res) {
-	isExtEnabled = res["isEnabled"];
-},	function() {
-	browser.storage.local.set({isEnabled: true});
-	isExtEnabled = true;
-});
+var isExtEnabled = false;
 
 var lastSongTitle = "";
 var port;
 updateExtensionState(isExtEnabled);
+
+function replaceStrangeCh(str) {
+	str = str
+		.replace('Æ', 'AE')
+		.replace('æ', 'ae')
+		.replace('Ð', 'D')
+		.replace('ð', 'd')
+		.replace('Ø', 'O')
+		.replace('ø', 'o')
+		.replace('Þ', 'TH')
+		.replace('þ', 'th')
+		.replace('Œ', 'OE')
+		.replace('œ', 'oe')
+		.replace('ß', 'ss')
+		.replace('ƒ', 'f');
+	return str;
+}
 
 //sends song to the native app
 function getSong(message) {
 	if(message.song != lastSongTitle) {
 		console.log("got and now sending: " + message.song);
 		lastSongTitle = message.song;
-		port.postMessage(message.song);
+		port.postMessage(replaceStrangeCh(message.song));
 	}
 }
 

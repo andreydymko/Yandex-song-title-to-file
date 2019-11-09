@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Get_Song_Title_To_File",
-    "version": "0.1",
+    "version": "0.1.1",
     "applications": {
         "gecko": {
             "id": "1mfSCfd200SongTitleToFile@google.com",
