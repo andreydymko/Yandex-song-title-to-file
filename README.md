@@ -1,7 +1,7 @@
 # Yandex-song-title-to-file
 Gets song title from Yandex.Radio and Yandex.Music sites and writes it to the text file on users PC.
 # Installation Guide
-Download all files from [mega.nz](https://mega.nz/#!sq5VTQ7A!Ep0vLeBABbNOYJy3HShZn8klijojKMSsiVwBGr8KMYk).
+Download all files from [mega.nz](https://mega.nz/#!Yu5ADaAJ!jkGGOdHUz6MTA206ggw38-le8iEP3wOB_u0NhMv5uYg).
 
 **get_song_title_to_file.xpi** - is a **firefox extension** file. Just install it in firefox using "Install Add-on from file".
 
